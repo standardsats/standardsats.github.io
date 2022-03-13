@@ -2,6 +2,7 @@
 layout: default
 title: Standard Sats: Synthetic Lightning-native Assets
 permalink: /en/
+redirect_from: /
 ---
 
 ## Problem

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Standard Sats: Синтетические Активы в Сети Лайтнинг
 permalink: /ru/
 ---
