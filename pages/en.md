@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: redirected
 title: Standard Sats: Synthetic Lightning-native Assets
-permalink: /en/
-redirect_from: /
+sitemap: false
+permalink: /
+redirect_to:  /en/
 ---
 
 ## Problem
