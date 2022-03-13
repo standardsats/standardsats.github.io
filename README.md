@@ -1,8 +1,8 @@
 ---
-layout: default
-title: Standard Sats: Synthetic Lightning-native Assets
+layout: redirected
 sitemap: false
-redirect_to: /en
+permalink: /
+redirect_to:  /en/
 ---
 
 ## Standard Sats Landing Page
