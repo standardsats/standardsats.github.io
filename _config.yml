@@ -11,9 +11,7 @@ plugin: https://github.com/standardsats/plugin-fiat-channels
 wallet: https://github.com/standardsats/wallet
 rfc: https://github.com/standardsats/fiat-channels-rfc
 
-telegram:
-contact:
-twitter:
+telegram: https://t.me/standardsats
 
 show_excerpts: false # set to false to remove excerpts on the homepage
 theme: jekyll-theme-minimal
