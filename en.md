@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Standard Sats: Синтетические Активы в Сети Лайтнинг
-permalink: /ru/
+title: Standard Sats: Synthetic Lightning-native Assets
+sitemap: false
+permalink: /en
+redirect_from: /
 ---
 
 ## Problem
