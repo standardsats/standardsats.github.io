@@ -1,3 +1,3 @@
 ## Standard Sats Landing Page
 
-Simple GitHub page.
+Simple GitHub pages website. Homepage `/pages/en.md` uses redirect.
