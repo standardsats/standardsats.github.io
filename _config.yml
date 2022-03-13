@@ -5,3 +5,14 @@ description: Lightning-native synthetic assets
 logo: /assets/img/logo.png
 show_downloads: true
 github_username: standardsats
+
+# project links:
+eclair: https://github.com/ACINQ/eclair
+plugin: https://github.com/standardsats/plugin-fiat-channels
+wallet: https://github.com/standardsats/wallet
+rfc: https://github.com/standardsats/fiat-channels-rfc
+
+telegram:
+contact:
+twitter:
+
