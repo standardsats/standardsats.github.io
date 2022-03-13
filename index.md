@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Standard Sats: Synthetic Lightning-native Assets
-sitemap: false
-permalink: /
 ---
 
 ## Problem
