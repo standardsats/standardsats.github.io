@@ -1,9 +1,8 @@
-theme: jekyll-theme-minimal
 title: Standard Sats Project
 description: Lightning-native synthetic assets
 
 logo: /assets/img/logo.png
-show_downloads: true
+show_downloads: false
 github_username: standardsats
 
 # project links:
@@ -16,3 +15,18 @@ telegram:
 contact:
 twitter:
 
+show_excerpts: false # set to false to remove excerpts on the homepage
+theme: jekyll-theme-minimal
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+plugins:
+  - jekyll-theme-minimal
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-theme-minimal
+  - jekyll-redirect-from

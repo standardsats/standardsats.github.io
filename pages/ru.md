@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Standard Sats: Synthetic Lightning-native Assets
-permalink: /en/
+title: Standard Sats: Синтетические Активы в Сети Лайтнинг
+permalink: /ru/
 ---
 
 ## Problem
