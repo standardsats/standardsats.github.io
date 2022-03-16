@@ -33,7 +33,7 @@ fiat currency while being programmatically backed by corresponding amount of sat
 proposal is that payments from/to such fiat channels will be transferred on top of LN network original nodes w/o any 
 limitations.
 
-![Schematic View of the Lightning Node and Satellite Wallets](assets/img/standard-sats-community.drawio.svg)
+![Schematic View of the Lightning Node and Satellite Wallets ><](assets/img/standard-sats-community.drawio.svg)
 
 This way users can finally split the experience between fiat<–>Bitcoin while maintaining 100% compatibility with LN 
 specifications. Technically, a client-side app generates standard LN messages / packets and host-side, after settling 
