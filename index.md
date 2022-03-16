@@ -3,6 +3,18 @@ layout: default
 title: Standard Sats: Synthetic Lightning-native Assets
 ---
 
+## What is the Lightning Network?
+
+As [Coinbase](https://www.coinbase.com/learn/crypto-basics/what-is-lightning) puts it:
+
+> The Lightning Network allows users to send or receive Bitcoin quickly and cheaply by moving transactions off of the 
+> main blockchain — you can think of it as being a little like an HOV lane on a highway.  
+
+The Lightning Network is designed to make bitcoin transactions as fast and cheap as possible. It’s part of a newer class
+of crypto technologies known as “layer 2” blockchains — which you can think of as being a little like HOV lanes on 
+highways. By offloading some transaction “traffic” to the Lightning Network’s “layer 2” blockchain, the core Bitcoin 
+blockchain (“layer 1”) can move faster. 
+
 ## Volatility Protection
 
 > Hugo Conteras, a shirtless twentysomething, stands on the shore with a long lens, photographing them (surfers). Later, 
