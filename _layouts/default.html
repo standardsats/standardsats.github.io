@@ -65,6 +65,8 @@
     <footer>
       <p><a target="_blank" href="{{ site.telegram }}">Contact</a></p>
       <ul class="translate" data-i18n>
+        <li class="{% if page.url contains '/index/' %}active{% endif %}"><a href="{{ 'index' | relative_url }}">English</a></li>
+        |
         <li class="{% if page.url contains '/ru/' %}active{% endif %}"><a href="{{ 'ru' | relative_url }}">Русский</a></li>
       </ul>
     </footer>
