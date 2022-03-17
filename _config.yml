@@ -4,6 +4,7 @@ baseurl: ""
 url: "https://standardsats.github.io"
 
 logo: /assets/img/logo.png
+apkpic: /assets/img/apk_pic.png
 show_downloads: false
 github_username: standardsats
 
