@@ -9,6 +9,7 @@ show_downloads: false
 github_username: standardsats
 
 # project links:
+chat: https://t.me/StandardSatsCommunity
 eclair: https://github.com/ACINQ/eclair
 plugin: https://github.com/standardsats/plugin-fiat-channels
 wallet: https://github.com/standardsats/wallet
