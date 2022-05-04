@@ -29,7 +29,7 @@ Watch [the video of such a wallet](https://youtu.be/7bvFbpivc0E?t=39).
 bills for housing, food, insurance, etc.
 * A man without a bank account from Montenegro buys a certain product for euros from a colleague in Germany 
 sending it by mail. The advance payment for the goods is transferred using Standard Sats. 
-The buyer of the goods is insured against a drop of bitcoin price.
+The buyer of the goods is insured against a drop in the bitcoin price.
 
 ## FAQ
 
@@ -40,29 +40,29 @@ steal your bitcoins. You can install the software on your server to administer i
 
 ### How is it different from stablecoins?
 
-Stablecoins are usually issued by a centralized issuer. For example, for Tether, it is a Panama bank.
+Stablecoins are usually issued by a centralized issuer. In the case of Tether, it is a Panama bank.
 They are fiat money guarantees that require the trust of the issuing bank. While the synthetic assets 
-in broad sense do not have a centralized issuer.
+in a broad sense do not have a centralized issuer.
 
 ### What is the probability that my assets will be stolen if the exchange is hacked? What are the guarantees? Are there precedents?
 
 Any tokens stored on an exchange are subject to the risks of hacking or bankruptcy of the exchange.
-In general, this is called the counterparty risk. Unfortunately, without this risk, you cannot use the 
-capital markets that exchanges provide. Assess your risks yourself by deciding to install software and 
-open a personal account in the exchange for its operation. Alas, in the more than 10-year history of the 
+In general, this is called counterparty risk. Unfortunately, you cannot use the 
+capital markets that exchanges provide without this risk. Assess your risks yourself by deciding to install software and 
+open a personal account in exchange for its operation. Alas, in the more than 10-year history of the 
 existence of Bitcoin, we can count many precedents for hacking and bankruptcy of exchanges.
 
 ### Who is behind the project?
 
-The creators of the project are developers Ilya Evdokimov and Anton Gushcha, who created a product 
+The founders are developers Ilya Evdokimov and Anton Gushcha, who created a product 
 prototype in November 2021 as part of a [banking hackathon](https://bitcoin-bankathon.devpost.com/project-gallery).
-The development of the project is financed from the founders' own funds. You can send donations via the 
+The development of the project is self-funded. You can send donations via the 
 Lightning Network to [standardsats@lntxbot.com](https://lntxbot.com/@standardsats). Follow the link if 
 your wallet does not support Lightning Address.
 
 ### How does a node administrator make money?
 
-By installing the Standard Sats software, the user becomes the administrator of their server and can earn 
+By installing the Standard Sats software, the user becomes the host administrator and can earn 
 routing fees in the Lightning network. However, Standard Sats is not responsible for the actions of the 
 user or the exchange used for hedging. Also, payment routing income is not guaranteed.
 
