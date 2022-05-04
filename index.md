@@ -1,60 +1,83 @@
 ---
 layout: default
 title: Standard Sats: Synthetic Lightning-native Assets
+sitemap: false
+permalink: /en/
 ---
 
-## What is the Lightning Network?
+**Standard Sats** — is a service solving the high volatility of bitcoin against the euro by hedging.
+It is an independent bitcoin bank for geographically-distributed communities or businesses.
+The product consists of an open-source protocol client (mobile bitcoin wallet; modified version of Simple 
+Bitcoin Wallet, SBW) and node. The node works on the Lightning Network.
+Get started — read [instructions for connecting a wallet](https://docs.google.com/document/d/1PyTQkZ5kc4KA7_Mt86CkOWm-I4bMd51xt1PsRotYNBU/edit?usp=sharing).
 
-As [Coinbase](https://www.coinbase.com/learn/crypto-basics/what-is-lightning) puts it:
+## How it works
 
-> The Lightning Network allows users to send or receive Bitcoin quickly and cheaply by moving transactions off of the 
-> main blockchain — you can think of it as being a little like an HOV lane on a highway.  
-
-The Lightning Network is designed to make bitcoin transactions as fast and cheap as possible. It’s part of a newer class
-of crypto technologies known as “layer 2” blockchains — which you can think of as being a little like HOV lanes on 
-highways. By offloading some transaction “traffic” to the Lightning Network’s “layer 2” blockchain, the core Bitcoin 
-blockchain (“layer 1”) can move faster. 
-
-## Volatility Protection
-
-> Hugo Conteras, a shirtless twentysomething, stands on the shore with a long lens, photographing them (surfers). Later, 
-he offers to sell them a series of the best shots for about $20. He tells me surfers sometimes ask if he’ll take 
-Bitcoin. He’s taken it on a few occasions, but the dips in price burned him. “Now I tell them it’s $25 if they want to 
-pay in Bitcoin,” he tells me. “You don’t know when it’s going to go down.” ^1
-
-All economical activities of general public are measured in local currency units, while Lightning Network (LN) is a 
-by-design monoasset network based on Bitcoin. Some services like Strike (and Chivo?) bridge this gap by implementing a 
-proprietary closed-loop settlement solutions for limited use cases. But the industry of ‘fiat denominated layers’ 
-currently lacking:
-
- - Interoperability across LN network with native properties
- - LN backward compatibility
- - Fiat denominated accounts backed with sats
- - Instant hedge instrument against Bitcoin volatility for fiat-based business and convenience of new bitcoin users
-
-Market Cap of stablecoins has surpassed $300B, making it a proven “glue” / bridge / layer of abstraction between fiat 
-and bitcoin markets for centralized institutions. But stablecoin implementation on top of native bitcoin lightning 
-“payment rails” still does not exist. Costs incurred for stablecoin settlement on any other network are exceeding 
-day-to-day transactions standards, making the Bitcoin-based real-world economy dysfunctional.
-
-## Manage Your Risks Non-Custodially
-
-The proposed *Standard Sats* solution is based on recently announced “hosted channels” standard implementation 
-(aka “custodial channels” or “host-channels”). Host-channels could be modified to support constant nominal value in 
-fiat currency while being programmatically backed by corresponding amount of sats. The most advantageous part of the 
-proposal is that payments from/to such fiat channels will be transferred on top of LN network original nodes w/o any 
-limitations.
+User installs the wallet (as of May 2022 only the Android version is available).
+Since the "fiat" channel opens automatically, it can be replenished with satoshis immediately after installation.
+The user can always open a regular channel to any Lightning node if required and if he has bitcoins in the wallet.
+Upon replenishing the "fiat" channel, the service locks the bitcoin price in euros, opening a position on the exchange
+[Kollider](https://kollider.xyz/). The user sees a disposable amount in euros in the wallet, which does not depend on the exchange rate of bitcoin.
+Thus, a new bitcoin-derived asset is created, comparable to a personal stablecoin.
+Watch [the video of such a wallet](https://youtu.be/7bvFbpivc0E?t=39).
 
 ![Schematic View of the Lightning Node and Satellite Wallets ><](assets/img/standard-sats-community.drawio.svg)
 
-This way users can finally split the experience between fiat<–>Bitcoin while maintaining 100% compatibility with LN 
-specifications. Technically, a client-side app generates standard LN messages / packets and host-side, after settling 
-client-host fiat relations, provides routing of payments in the network according to the protocol rules.
+## Use cases
 
-The fiat-channel module for lightning node could be used for a trust-based community bank in the remote unbanked village.
-This setup would ensure market-neutral position of participants on most effective way, technically and economically.
+* A private entrepreneur accepts payment for work in eurobitcoins, securing the ability to pay current 
+bills for housing, food, insurance, etc.
+* A man without a bank account from Montenegro buys a certain product for euros from a colleague in Germany 
+sending it by mail. The advance payment for the goods is transferred using Standard Sats. 
+The buyer of the goods is insured against a drop of bitcoin price.
 
-## References
+## FAQ
+
+### Does the service provide access to its node? If so, can the server admin theoretically steal my bitcoins?
+
+Yes, "fiat" channels are managed by the Standard Sats project by default and the service administrator can
+steal your bitcoins. You can install the software on your server to administer it for yourself.
+
+### How is it different from stablecoins?
+
+Stablecoins are usually issued by a centralized issuer. For example, for Tether, it is a Panama bank.
+They are fiat money guarantees that require the trust of the issuing bank. While the synthetic assets 
+in broad sense do not have a centralized issuer.
+
+### What is the probability that my assets will be stolen if the exchange is hacked? What are the guarantees? Are there precedents?
+
+Any tokens stored on an exchange are subject to the risks of hacking or bankruptcy of the exchange.
+In general, this is called the counterparty risk. Unfortunately, without this risk, you cannot use the 
+capital markets that exchanges provide. Assess your risks yourself by deciding to install software and 
+open a personal account in the exchange for its operation. Alas, in the more than 10-year history of the 
+existence of Bitcoin, we can count many precedents for hacking and bankruptcy of exchanges.
+
+### Who is behind the project?
+
+The creators of the project are developers Ilya Evdokimov and Anton Gushcha, who created a product 
+prototype in November 2021 as part of a [banking hackathon](https://bitcoin-bankathon.devpost.com/project-gallery).
+The development of the project is financed from the founders' own funds. You can send donations via the 
+Lightning Network to [standardsats@lntxbot.com](https://lntxbot.com/@standardsats). Follow the link if 
+your wallet does not support Lightning Address.
+
+### How does a node administrator make money?
+
+By installing the Standard Sats software, the user becomes the administrator of their server and can earn 
+routing fees in the Lightning network. However, Standard Sats is not responsible for the actions of the 
+user or the exchange used for hedging. Also, payment routing income is not guaranteed.
+
+### Are there any usage examples?
+
+Yes. As of May 2022, the project has been deployed in [MonteLibero](https://montelibero.org/faq-po-montelibero/) community.
+
+## Caveat Emptor
+
+The software in Standard Sats repository is provided "as is", without warranty of any kind, explicit or 
+implied. You use this software at your own risk. The author of the program will not be responsible for any 
+loss or corruption of data, disruption of other programs and systems, as well as for any profit lost in 
+the process of using or misusing this software product.
+
+## Links
 
 1 - [Bitcoin Beach: What Happened When an El Salvador Surf Town Went Full Crypto](https://www.bloomberg.com/news/features/2021-06-17/world-s-biggest-bitcoin-experiment-is-a-surf-town-in-el-salvador)
 
