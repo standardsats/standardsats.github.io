@@ -19,7 +19,8 @@ rfc: https://github.com/standardsats/fiat-channels-rfc
 telegram: https://t.me/StandardSatsCommunity
 
 show_excerpts: false # set to false to remove excerpts on the homepage
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -30,6 +31,7 @@ exclude:
 plugins:
   - jekyll-theme-minimal
   - jekyll-redirect-from
+  - jekyll-remote-theme
 whitelist:
   - jekyll-theme-minimal
   - jekyll-redirect-from
