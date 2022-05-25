@@ -55,11 +55,12 @@
         <img src="{{site.apkpic | relative_url}}" alt="Download APK" border="0" height=90 />
         </a>
       </p>
-
-      {% if site.github.is_user_page %}
-      <p class="view"><a href="{{ site.github.owner_url }}">Project GitHub</a></p>
-      {% endif %}
-
+      <p class="view">
+        <a target="_blank" href="https://github.com/standardsats">Project GitHub
+          <small>"https://github.com/standardsats"</small>
+        </a>
+      </p>
+      
       {% if site.show_downloads %}
       <ul class="downloads">
         <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
@@ -68,14 +69,15 @@
       </ul>
       {% endif %}
     </header>
+    
  <section>
     {{ content }}
- </section>    
+ </section>
+    
     <footer>
       <p><a target="_blank" href="{{ site.telegram }}">Contact</a></p>
       <ul class="translate" data-i18n>
         <li class="{% if page.url contains '/index/' %}active{% endif %}"><a href="{{ 'index' | relative_url }}">English</a></li>
-        |
         <li class="{% if page.url contains '/ru/' %}active{% endif %}"><a href="{{ 'ru' | relative_url }}">Русский</a></li>
       </ul>
     </footer>
