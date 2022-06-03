@@ -70,7 +70,7 @@ SBW) и узла, выполненных на основе открытого и
 
 ### Существуют ли примеры использования? 
 
-Да. На Май 2022 проект развернут в сообществе [MonteLibero](https://montelibero.org/faq-po-montelibero/)
+Да. На Май 2022 проект развернут в сообществе [MonteLibero](https://montelibero.org)
 
 ## Caveat Emptor
 

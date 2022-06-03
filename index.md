@@ -68,7 +68,7 @@ user or the exchange used for hedging. Also, payment routing income is not guara
 
 ### Are there any usage examples?
 
-Yes. As of May 2022, the project has been deployed in [MonteLibero](https://montelibero.org/faq-po-montelibero/) community.
+Yes. As of May 2022, the project has been deployed in [MonteLibero](https://montelibero.org) community.
 
 ## Caveat Emptor
 
