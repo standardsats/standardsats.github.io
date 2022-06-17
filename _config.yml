@@ -13,7 +13,7 @@ chat: https://t.me/StandardSatsCommunity
 eclair: https://github.com/ACINQ/eclair
 plugin: https://github.com/standardsats/plugin-fiat-channels
 wallet: https://github.com/standardsats/wallet
-wallet_eur_release: https://github.com/standardsats/wallet/releases/tag/2.5.2
+wallet_eur_release: https://github.com/standardsats/wallet/releases/tag/3.0.0
 rfc: https://github.com/standardsats/fiat-channels-rfc
 
 telegram: https://t.me/StandardSatsCommunity
