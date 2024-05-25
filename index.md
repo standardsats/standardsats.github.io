@@ -56,8 +56,7 @@ existence of Bitcoin, we can count many precedents for hacking and bankruptcy of
 
 The founders are developers Ilya Evdokimov and Anton Gushcha, who created a product 
 prototype in November 2021 as part of a [banking hackathon](https://bitcoin-bankathon.devpost.com/project-gallery).
-The development of the project is self-funded. You can send donations via the 
-Lightning Network to **centralviola51@walletofsatoshi.com**.
+The development of the project is self-funded. You can send donations to our [Geyser campaign](https://geyser.fund/project/valetlightning).
 
 ### How does a node administrator make money?
 
