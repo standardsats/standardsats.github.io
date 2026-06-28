@@ -2,25 +2,41 @@ title: Standard Sats
 description: Lightning-native synthetic assets
 baseurl: ""
 url: "https://standardsats.github.io"
+lang: en-US
 
-logo: /assets/img/logo.png
+logo: /assets/img/logo.webp
 apkpic: /assets/img/apk_pic.png
 show_downloads: false
 github_username: standardsats
 
-# project links:
+# project / resource links (used in footer + landing)
 chat: https://t.me/StandardSatsCommunity
 eclair: https://github.com/ACINQ/eclair
 plugin: https://github.com/standardsats/plugin-fiat-channels
 wallet: https://github.com/standardsats/wallet
 wallet_eur_release: https://github.com/standardsats/valet/releases/tag/4.4.1
 rfc: https://github.com/standardsats/fiat-channels-rfc
-
 telegram: https://t.me/StandardSatsCommunity
 
-show_excerpts: false # set to false to remove excerpts on the homepage
-# theme: jekyll-theme-minimal
-remote_theme: pages-themes/minimal@v0.2.0
+# social (footer)
+social:
+  - { name: "Telegram",     url: "https://t.me/StandardSatsCommunity" }
+  - { name: "X (Twitter)",  url: "https://x.com/standard_sats" }
+  - { name: "YouTube",      url: "https://www.youtube.com/@standardsats" }
+  - { name: "GitHub",       url: "https://github.com/standardsats" }
+
+# top navigation
+nav:
+  - { title: "Home", url: "/en/" }
+  - { title: "HC/FC Stack Setup", url: "/hosted-channel-tutorial/" }
+  - title: "Valet"
+    children:
+      - { title: "Features", url: "/valet-features/" }
+      - { title: "Complete User Guide", url: "/valet-tutorial/" }
+  - { title: "Grant Request", url: "/grant/" }
+
+show_excerpts: false
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -28,10 +44,8 @@ exclude:
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
+  - README.md
+
 plugins:
-  - jekyll-theme-minimal
   - jekyll-redirect-from
-  - jekyll-remote-theme
-whitelist:
-  - jekyll-theme-minimal
-  - jekyll-redirect-from
+  - jekyll-seo-tag

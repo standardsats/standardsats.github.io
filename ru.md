@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Standard Sats: Синтетические Активы в Сети Лайтнинг
+title: "Standard Sats: Синтетические Активы в Сети Лайтнинг"
 sitemap: false
 permalink: /ru/
 ---
@@ -21,7 +21,7 @@ SBW) и узла, выполненных на основе открытого и
 Таким образом, создается новый производный от биткойна актив, сравнимый с персональным стейбл-койном. 
 Посмотрите [видео работы такого кошелька](https://youtu.be/7bvFbpivc0E?t=39) (на англ).
 
-![Schematic View of the Lightning Node and Satellite Wallets ><](assets/img/standard-sats-community.drawio.svg)
+![Schematic View of the Lightning Node and Satellite Wallets ><](/assets/img/standard-sats-community.drawio.svg)
 
 ## Сценарии использования
 

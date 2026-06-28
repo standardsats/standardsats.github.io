@@ -1,0 +1,64 @@
+<footer class="footer">
+  <div class="wrap">
+
+    <div class="footer-cta">
+      <h4>Get Valet</h4>
+      <div class="footer-badges">
+        <a href="{{ site.wallet_eur_release }}" target="_blank" rel="noopener">
+          <img src="{{ site.apkpic | relative_url }}" alt="Download APK">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.btcontract.walletfiat&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank" rel="noopener">
+          <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+      <div>
+        <a href="{{ '/en/' | relative_url }}" class="brand">
+          {% if site.logo %}<img src="{{ site.logo | relative_url }}" alt="Standard Sats logo">{% endif %}
+          <span>Standard<span class="dot">·</span>Sats</span>
+        </a>
+        <p class="blurb">{{ site.description }} — an independent bitcoin bank for geographically-distributed communities and businesses.</p>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="{{ site.wallet_eur_release }}" target="_blank" rel="noopener">Download Valet (APK)</a></li>
+          <li><a href="{{ '/valet-features/' | relative_url }}">Valet Features</a></li>
+          <li><a href="{{ '/valet-tutorial/' | relative_url }}">Valet — Complete User Guide</a></li>
+          <li><a href="{{ '/hosted-channel-tutorial/' | relative_url }}">HC/FC Stack Setup Tutorial</a></li>
+          <li><a href="{{ '/grant/' | relative_url }}">Grant Request</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Project</h4>
+        <ul>
+          <li><a href="{{ site.wallet }}" target="_blank" rel="noopener">Wallet (SBW fork)</a></li>
+          <li><a href="{{ site.plugin }}" target="_blank" rel="noopener">Fiat Channels Plugin</a></li>
+          <li><a href="{{ site.rfc }}" target="_blank" rel="noopener">Fiat Channels RFC</a></li>
+          <li><a href="{{ site.eclair }}" target="_blank" rel="noopener">Eclair LN Node</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          {% for s in site.social %}
+            <li><a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-lang">
+        <a href="{{ '/en/' | relative_url }}"{% if page.url == '/en/' %} class="active"{% endif %}>English</a> ·
+        <a href="{{ '/ru/' | relative_url }}"{% if page.url == '/ru/' %} class="active"{% endif %}>Русский</a>
+      </p>
+      <p>&copy; {{ site.time | date: '%Y' }} Standard Sats. Open source.</p>
+    </div>
+  </div>
+</footer>

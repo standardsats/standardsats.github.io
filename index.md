@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Standard Sats: Synthetic Lightning-native Assets
+title: "Standard Sats: Synthetic Lightning-native Assets"
 sitemap: false
 permalink: /en/
 ---
@@ -21,7 +21,7 @@ Upon replenishing the "fiat" channel, the service locks the bitcoin price in eur
 Thus, a new bitcoin-derived asset is created, comparable to a personal stablecoin.
 Watch [the video of such a wallet](https://youtu.be/7bvFbpivc0E?t=39).
 
-![Schematic View of the Lightning Node and Satellite Wallets ><](assets/img/standard-sats-community.drawio.svg)
+![Schematic View of the Lightning Node and Satellite Wallets ><](/assets/img/standard-sats-community.drawio.svg)
 
 ## Use cases
 

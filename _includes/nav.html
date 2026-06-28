@@ -1,0 +1,44 @@
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="{{ '/en/' | relative_url }}" class="brand">
+      {% if site.logo %}<img src="{{ site.logo | relative_url }}" alt="Standard Sats logo">{% endif %}
+      <span>Standard<span class="dot">·</span>Sats</span>
+    </a>
+
+    <div class="nav-links">
+      {% for item in site.nav %}
+        {% if item.children %}
+          {% assign grp_active = false %}
+          {% for c in item.children %}{% if page.url == c.url %}{% assign grp_active = true %}{% endif %}{% endfor %}
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle{% if grp_active %} active{% endif %}" aria-haspopup="true">{{ item.title }} <span class="caret">▾</span></a>
+            <div class="dropdown-menu">
+              {% for c in item.children %}
+                <a href="{{ c.url | relative_url }}"{% if page.url == c.url %} class="active"{% endif %}>{{ c.title }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        {% else %}
+          <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="nav-drawer" id="navDrawer">
+    {% for item in site.nav %}
+      {% if item.children %}
+        <span class="drawer-group">{{ item.title }}</span>
+        {% for c in item.children %}
+          <a class="drawer-sub" href="{{ c.url | relative_url }}"{% if page.url == c.url %} class="active"{% endif %}>{{ c.title }}</a>
+        {% endfor %}
+      {% else %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</nav>

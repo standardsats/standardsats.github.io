@@ -14,20 +14,28 @@
 <body>
   {% include nav.html %}
 
-  {% if page.url == '/en/' %}
-  <header class="hero">
-    <div class="wrap">
-      <h1>Lightning-native <span class="accent">synthetic assets</span></h1>
-      <p class="tagline">An independent bitcoin bank for geographically-distributed communities and businesses, built on the Lightning Network.</p>
-    </div>
-  </header>
-  {% endif %}
+  <div class="tutorial">
+    <aside class="t-toc" data-toc-case="{{ page.toc_case }}">
+      <p class="toc-title">On this page</p>
+      {% assign parts = content | split: '<h2 id="' %}
+      {% if parts.size > 1 %}
+      <ul>
+        {% for part in parts offset:1 %}
+          {% assign id = part | split: '"' | first %}
+          {% assign seg = part | split: '">' %}
+          {% assign text = seg[1] | split: '</h2>' | first | strip_html | strip %}
+          <li><a href="#{{ id }}">{{ text }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </aside>
 
-  <main id="content" class="article">
-    <div class="wrap prose">
+    <article class="t-content prose">
+      <h1>{{ page.title }}</h1>
+      {% if page.cover %}<img class="t-cover" src="{{ page.cover | relative_url }}" alt="{{ page.title }} cover">{% endif %}
       {{ content }}
-    </div>
-  </main>
+    </article>
+  </div>
 
   {% include footer.html %}
   <script src="{{ '/assets/js/site.js' | relative_url }}"></script>

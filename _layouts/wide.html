@@ -13,22 +13,9 @@
 </head>
 <body>
   {% include nav.html %}
-
-  {% if page.url == '/en/' %}
-  <header class="hero">
-    <div class="wrap">
-      <h1>Lightning-native <span class="accent">synthetic assets</span></h1>
-      <p class="tagline">An independent bitcoin bank for geographically-distributed communities and businesses, built on the Lightning Network.</p>
-    </div>
-  </header>
-  {% endif %}
-
-  <main id="content" class="article">
-    <div class="wrap prose">
-      {{ content }}
-    </div>
+  <main>
+    {{ content }}
   </main>
-
   {% include footer.html %}
   <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
 </body>
