@@ -44,6 +44,35 @@
     headings.forEach(function (h) { obs.observe(h); });
   }
 
+  /* ---- Copy button on fenced code blocks ---- */
+  document.querySelectorAll('.prose div.highlight').forEach(function (block) {
+    var wrap = document.createElement('div');
+    wrap.className = 'code-wrap';
+    block.parentNode.insertBefore(wrap, block);
+    wrap.appendChild(block);
+
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'copy-btn';
+    btn.textContent = 'Copy';
+    wrap.appendChild(btn);
+
+    btn.addEventListener('click', function () {
+      var code = block.innerText.replace(/\s+$/, '');
+      var done = function () { btn.textContent = 'Copied'; btn.classList.add('copied'); setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1500); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(done).catch(fallback);
+      } else { fallback(); }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = code; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) { btn.textContent = 'Failed'; }
+        document.body.removeChild(ta);
+      }
+    });
+  });
+
   /* ---- Back-to-top button (only on long pages, after scrolling) ---- */
   var toTop = document.createElement('button');
   toTop.className = 'to-top';

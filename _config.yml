@@ -32,7 +32,7 @@ nav:
   - title: "Valet"
     children:
       - { title: "Features", url: "/valet-features/" }
-      - { title: "Complete User Guide", url: "/valet-tutorial/" }
+      - { title: "Comprehensive User Guide", url: "/valet-tutorial/" }
   - { title: "Grant Request", url: "/grant/" }
 
 show_excerpts: false
