@@ -17,9 +17,11 @@
   <nav class="page-nav">
     {% if page.url contains '/ru/' %}
       <a href="{{ '/ru/' | relative_url }}" {% if page.nav == 'home' %}class="active"{% endif %}>Главная</a>
+      <a href="{{ '/ru/faq/' | relative_url }}" {% if page.nav == 'faq' %}class="active"{% endif %}>Вопросы и ответы</a>
       <a href="{{ '/ru/disclaimers/' | relative_url }}" {% if page.nav == 'disclaimers' %}class="active"{% endif %}>Дисклеймеры</a>
     {% else %}
       <a href="{{ '/en/' | relative_url }}" {% if page.nav == 'home' %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/en/faq/' | relative_url }}" {% if page.nav == 'faq' %}class="active"{% endif %}>FAQ</a>
       <a href="{{ '/en/disclaimers/' | relative_url }}" {% if page.nav == 'disclaimers' %}class="active"{% endif %}>Disclaimers</a>
     {% endif %}
   </nav>
