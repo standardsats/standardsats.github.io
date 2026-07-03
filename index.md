@@ -7,13 +7,12 @@ permalink: /en/
 
 **Standard Sats** — is a service solving the high volatility of bitcoin against the euro by hedging.
 It is an independent bitcoin bank for geographically-distributed communities or businesses.
-The product consists of an open-source protocol client (mobile bitcoin wallet; modified version of Simple 
-Bitcoin Wallet, SBW) and node. The node works on the Lightning Network.
+The product consists of an open-source protocol client (mobile bitcoin wallet; modified version of [Simple Bitcoin Wallet](https://github.com/Tactical-Advantage-Trading/wallet)) and node. The node works on the Lightning Network.
 Get started — read [instructions for connecting a wallet](https://docs.google.com/document/d/1PyTQkZ5kc4KA7_Mt86CkOWm-I4bMd51xt1PsRotYNBU/edit?usp=sharing).
 
 ## How it works
 
-User installs the wallet (as of May 2022 only the Android version is available).
+User installs the wallet (as of May 2022, only the Android version was available; this information may be outdated).
 Since the "fiat" channel opens automatically, it can be replenished with satoshis immediately after installation.
 The user can always open a regular channel to any Lightning node if required and if he has bitcoins in the wallet.
 Upon replenishing the "fiat" channel, the service locks the bitcoin price in euros, opening a position on the exchange
@@ -68,12 +67,53 @@ user or the exchange used for hedging. Also, payment routing income is not guara
 
 Yes. As of May 2022, the project has been deployed in [MonteLibero](https://montelibero.org) community.
 
-## Caveat Emptor
+## Important Disclaimers
 
-The software in Standard Sats repository is provided "as is", without warranty of any kind, explicit or 
-implied. You use this software at your own risk. The author of the program will not be responsible for any 
-loss or corruption of data, disruption of other programs and systems, as well as for any profit lost in 
-the process of using or misusing this software product.
+### Software Warranty Disclaimer
+
+The software in the Standard Sats repository is provided "as is", without warranty of any kind, explicit or implied. 
+The maintainers assume no responsibility for any damage caused by running, distributing, or using this open-source software, 
+including but not limited to:
+
+- Loss or corruption of data
+- Disruption of other programs and systems
+- Loss of funds or cryptocurrency
+- Any profit lost or financial damage in the process of using this software
+- Operational failures or security vulnerabilities
+
+You use this software entirely at your own risk. The authors and contributors will not be held liable for any 
+consequences of your use or misuse of this software.
+
+### Financial Risk and Regulatory Disclaimer
+
+Standard Sats provides tools for cryptocurrency hedging and financial transactions. **The developers do not provide 
+financial advice, legal advice, or regulatory guidance.**
+
+- The service involves exchange operations and counterparty risk with third-party exchanges
+- Bitcoin and cryptocurrency markets are highly volatile and risky
+- You could lose your entire investment
+- The service administrator may theoretically have access to your funds
+- No insurance, guarantees, or regulatory protections apply
+
+**Regulatory Compliance:** Individuals or organizations providing cryptocurrency services to others using this software may 
+be required to obtain licenses or regulatory approvals depending on their jurisdiction. The developers make no 
+representations about regulatory compliance requirements and do not provide legal or regulatory advice. You are 
+solely responsible for determining and complying with all applicable laws and regulations in your jurisdiction.
+
+You should only use this software if you fully understand the risks and can afford to lose your funds. 
+Consult with a financial advisor and legal counsel before making investment decisions or offering services based on this software.
+
+### Donations
+
+Donations referenced on this site are **entirely optional** and are **unrelated to using the software**. 
+You can use, modify, and distribute this software freely without making any donations. Donations do not 
+provide any special support, guarantees, or privileges.
+
+### Open Source Attribution
+
+This project uses code derived from [Simple Bitcoin Wallet](https://github.com/Tactical-Advantage-Trading/wallet) 
+and the [Valet wallet](https://github.com/standardsats/valet).
+See the LICENSE file for details.
 
 ## Links
 
