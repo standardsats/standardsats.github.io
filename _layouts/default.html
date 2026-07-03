@@ -69,7 +69,7 @@
           <img src="{{site.apkpic | relative_url}}" alt="Download APK" border="0" height="104" />
         </a>
         <a href="https://f-droid.org/packages/finance.valet/" target="_blank">
-          <img alt="Get it on F-Droid" src="{{'/assets/img/fdroid_badge.svg' | relative_url}}" height="104" />
+          <img alt="Get it on F-Droid" src="{{'/assets/img/fdroid_badge.svg' | relative_url}}" height="50" />
         </a>
       </p>
       {% if site.show_downloads %}
@@ -88,8 +88,8 @@
     <footer>
       <p><a target="_blank" href="{{ site.telegram }}">Contact</a></p>
       <ul class="translate" data-i18n>
-        <li class="{% if page.url contains '/index/' %}active{% endif %}"><a href="{{ 'index' | relative_url }}">English</a></li>
-        <li class="{% if page.url contains '/ru/' %}active{% endif %}"><a href="{{ 'ru' | relative_url }}">Русский</a></li>
+        <li class="{% unless page.url contains '/ru/' %}active{% endunless %}"><a href="{{ '/en/' | relative_url }}">English</a></li>
+        <li class="{% if page.url contains '/ru/' %}active{% endif %}"><a href="{{ '/ru/' | relative_url }}">Русский</a></li>
       </ul>
     </footer>
   </div>
