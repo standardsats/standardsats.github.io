@@ -14,3 +14,51 @@ footer {
 .download-buttons {
   text-align: center;
 }
+
+.page-nav {
+  background-color: #f5f5f5;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  margin: 0;
+
+  a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: #005a9c;
+      text-decoration: underline;
+    }
+
+    &.active {
+      color: #005a9c;
+      font-weight: 600;
+      border-bottom: 2px solid #005a9c;
+      padding-bottom: 2px;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-nav {
+    background-color: #2d2d2d;
+    border-bottom-color: #444;
+
+    a {
+      color: #eee;
+
+      &:hover {
+        color: #79b8ff;
+      }
+
+      &.active {
+        color: #79b8ff;
+        border-bottom-color: #79b8ff;
+      }
+    }
+  }
+}
